@@ -1,0 +1,183 @@
+:root {
+    --font-weight: bolder;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+.imgSection{
+background-image: url(images/banana.webp);
+
+width: 50%;
+}
+
+.formSection{
+    
+    background-color: rgb(238, 228, 90);
+}
+
+.mainContainer{
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    
+    
+}
+/*link manipulation*/
+a{
+    text-decoration: none;
+    color: rgb(238, 228, 90);
+}
+a:hover{
+    color: rgb(211, 210, 206);
+ 
+}
+
+/*button manipulation*/
+button{
+    background-color: rgb(238, 228, 90);
+    border-radius: 5px;
+    width: fit-content;
+    height: 2rem;
+    border: 1px solid black;
+}
+
+button:hover{
+    border: 2px solid whitesmoke;
+    background-color: rgb(31, 51, 70);
+    color: aliceblue;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.twoinputs{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    
+   
+}
+/*input manipulation(focus)*/
+input{
+    border: 1px #E5E7EB;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid blue;
+    border-radius: 4px;
+    
+}
+
+.headSection{
+    font-size: 25px;
+    font-weight: var(--font-weight);
+    color: rgb(211, 210, 206);
+    height: 10rem;
+    background-color: rgb(31, 51, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 20%;
+    
+}
+
+.form_main{
+    height: 15rem;
+    padding-left: 4rem;
+    padding-right: 7rem;
+    padding-top: 2rem;
+    
+    box-shadow: 0px 3px 2px slategray;
+    min-height: 30%;
+}
+label{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.foot{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(18, 31, 43);
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+/*<title>Password Match Checker</title>
+  <style>
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" required>
+  
+  <label for="confirmPassword">Confirm Password:</label>
+  <input type="password" id="confirmPassword" required>
+  
+  <div id="error-message" class="error-message"></div>
+  
+  <script>
+    class PasswordMatchChecker {
+      constructor(passwordInput, confirmPasswordInput, errorMessageElement) {
+        this.passwordInput = passwordInput;
+        this.confirmPasswordInput = confirmPasswordInput;
+        this.errorMessageElement = errorMessageElement;
+        
+        this.addEventListeners();
+      }
+      
+      addEventListeners() {
+        this.passwordInput.addEventListener('input', this.checkPasswords.bind(this));
+        this.confirmPasswordInput.addEventListener('input', this.checkPasswords.bind(this));
+      }
+      
+      checkPasswords() {
+        const password = this.passwordInput.value;
+        const confirmPassword = this.confirmPasswordInput.value;
+        
+        if (password !== confirmPassword) {
+          this.passwordInput.style.borderColor = 'red';
+          this.confirmPasswordInput.style.borderColor = 'red';
+          this.errorMessageElement.textContent = 'Passwords do not match.';
+        } else {
+          this.passwordInput.style.borderColor = '';
+          this.confirmPasswordInput.style.borderColor = '';
+          this.errorMessageElement.textContent = '';
+        }
+      }
+    }
+
+    // Usage
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const errorMessageElement = document.getElementById('error-message');
+    
+    const passwordChecker = new PasswordMatchChecker(passwordInput, confirmPasswordInput, errorMessageElement);
+  </script>
+
+</body>
+</html>
+*/

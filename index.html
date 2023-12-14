@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>SignUp Page</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="imgSection">
+            <div>
+                <p class="logo">Bananas &trade;</p>
+            </div>
+        </div>
+        <div class="formSection">
+            <div class="headSection">
+                <p>Bananas? Why Bananas? Seriously, why not? Why anything else? Right,Bananas!!.</p>
+                <p>Now Signup(and let's go Bananas)</p>
+            </div>
+                <div class="form_main">
+                    <form class="frm_form" action="#" method="post">
+                       <div class="twoinputs">
+                        <div class="inputContainer">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" placeholder="Bobby" required>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" placeholder="Charlton" required>
+                        </div>
+                       </div>
+                       <div class="twoinputs">
+                        <div class="inputContainer">
+                            <label for="email"> EMAIL</label>
+                            <input type="email" id="email" placeholder="example@example.com" required>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="phone"> PHONE NUMBER</label>
+                            <input type="tel" min="9" max="15" id="phone" placeholder="123456789" required>
+                        </div>
+                       </div>
+                       <div class="twoinputs">
+                        <div class="inputContainer">
+                            <label for="Pass">PASSWORD</label>
+                            <input type="password" minlength="10" id="Pass" placeholder="**********" required>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="confirmPass"> CONFIRM PASSWORD</label>
+                            <input type="password" minlength="10" id="confirmPass" placeholder="**********" required>
+                            <div id="error-message" class="error-message"></div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="foot">
+                    <button type="button" class="create_acc">Create account</button>
+                    <p>Already have an account? <a href="#"> Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
