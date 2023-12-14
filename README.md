@@ -1,6 +1,6 @@
 # signupPage
 
-##TODO's
+##TODO's##
 To add more functionality to the form;
 *password validation
 *Work on the logo text
